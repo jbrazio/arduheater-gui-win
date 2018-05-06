@@ -37,7 +37,7 @@ namespace Arduheater_GUI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("COM4")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string SerialPort {
             get {
                 return ((string)(this["SerialPort"]));
@@ -104,6 +104,54 @@ namespace Arduheater_GUI.Properties {
             }
             set {
                 this["SerialFlow"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Generic device")]
+        public string Output_1_Title {
+            get {
+                return ((string)(this["Output_1_Title"]));
+            }
+            set {
+                this["Output_1_Title"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Generic device")]
+        public string Output_2_Title {
+            get {
+                return ((string)(this["Output_2_Title"]));
+            }
+            set {
+                this["Output_2_Title"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Generic device")]
+        public string Output_3_Title {
+            get {
+                return ((string)(this["Output_3_Title"]));
+            }
+            set {
+                this["Output_3_Title"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Generic device")]
+        public string Output_4_Title {
+            get {
+                return ((string)(this["Output_4_Title"]));
+            }
+            set {
+                this["Output_4_Title"] = value;
             }
         }
     }

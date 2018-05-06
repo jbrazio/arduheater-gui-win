@@ -6,7 +6,7 @@
       <Value Profile="(Default)">0, 0</Value>
     </Setting>
     <Setting Name="SerialPort" Type="System.String" Scope="User">
-      <Value Profile="(Default)">COM4</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="SerialRate" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">57600</Value>
@@ -22,6 +22,18 @@
     </Setting>
     <Setting Name="SerialFlow" Type="System.IO.Ports.Handshake" Scope="User">
       <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="Output_1_Title" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Generic device</Value>
+    </Setting>
+    <Setting Name="Output_2_Title" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Generic device</Value>
+    </Setting>
+    <Setting Name="Output_3_Title" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Generic device</Value>
+    </Setting>
+    <Setting Name="Output_4_Title" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Generic device</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -50,6 +50,11 @@ namespace Arduheater_GUI.Forms
             outputChart3.Active = false;
             outputChart4.Active = false;
 
+            outputChart1.Title = Properties.Settings.Default.Output_1_Title;
+            outputChart2.Title = Properties.Settings.Default.Output_2_Title;
+            outputChart3.Title = Properties.Settings.Default.Output_3_Title;
+            outputChart4.Title = Properties.Settings.Default.Output_4_Title;
+
             Runtime.RotationFlag = 0;
             Runtime.Main_Timer = new Timer();
             Runtime.SerialPort_Timer = new Timer();
@@ -70,6 +75,10 @@ namespace Arduheater_GUI.Forms
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Properties.Settings.Default.Location = this.Location;
+            Properties.Settings.Default.Output_1_Title = outputChart1.Title;
+            Properties.Settings.Default.Output_2_Title = outputChart2.Title;
+            Properties.Settings.Default.Output_3_Title = outputChart3.Title;
+            Properties.Settings.Default.Output_4_Title = outputChart4.Title;
             Properties.Settings.Default.Save();
         }
 
