@@ -18,6 +18,7 @@
  */
 
 using System;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using Arduheater_GUI.Forms;
 
@@ -25,7 +26,13 @@ namespace Arduheater_GUI
 {
     static class Program
     {
-        static public Serial Serial = new Serial();
+#if DEBUG
+        [DllImport("kernel32.dll")]
+        static extern bool AttachConsole(int dwProcessId);
+        private const int ATTACH_PARENT_PROCESS = -1;
+#endif
+
+        public static Serial Serial = new Serial();
 
         /// <summary>
         /// The main entry point for the application.
@@ -33,6 +40,12 @@ namespace Arduheater_GUI
         [STAThread]
         static void Main()
         {
+#if DEBUG
+            // redirect console output to parent process;
+            // must be before any calls to Console.WriteLine()
+            AttachConsole(ATTACH_PARENT_PROCESS);
+#endif
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());

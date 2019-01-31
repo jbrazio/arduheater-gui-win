@@ -55,6 +55,7 @@ namespace Arduheater_GUI
             if (!this.IsOpen)
             {
                 Main_Timer.Enabled = false;
+                throw new TimeoutException();
             }
             else
             {
@@ -74,7 +75,7 @@ namespace Arduheater_GUI
                 string text = Buffer_TX.Dequeue;
 
                 OutgoingData?.Invoke(this, EventArgs.Empty);
-                Console.WriteLine($"<< :{text}#");
+                Console.WriteLine($"[TX] :{text}#");
 
                 Write(":");
 
@@ -112,7 +113,7 @@ namespace Arduheater_GUI
                 sb.Append(Buffer_RX.Dequeue);
             }
 
-            Console.WriteLine($">> :{sb.ToString()}#");
+            Console.WriteLine($"[RX] :{sb.ToString()}#");
             IncomingData?.Invoke(this, EventArgs.Empty);
 
             return sb.ToString();
@@ -123,6 +124,11 @@ namespace Arduheater_GUI
             Buffer_TX.Enqueue(text);
         }
 
+        public void TXNow(string text)
+        {
+            Write(text);
+        }
+
         private void DataReceivedEvent(object sender, SerialDataReceivedEventArgs e)
         {
             SerialPort tty = (SerialPort)sender;
@@ -130,6 +136,7 @@ namespace Arduheater_GUI
             while (tty.IsOpen && tty.BytesToRead > 0)
             {
                 char c = (char)tty.ReadByte();
+                //Console.WriteLine($"[RAW] {c}");
 
                 switch (c)
                 {

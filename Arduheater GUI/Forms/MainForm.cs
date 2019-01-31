@@ -165,8 +165,12 @@ namespace Arduheater_GUI.Forms
 
         private void SerialPort_Connecting(object sender, EventArgs e)
         {
+            const int TIMEOUT = 30;
+            const int RESET = 6;
+
             long now = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
-            if (now - Runtime.Timeout > 10)
+            long t = now - Runtime.Timeout;
+            if (t > TIMEOUT)
             {
                 SerialPort_Disconnected(true);
                 Runtime.SerialPort_Timer.Enabled = false;
@@ -174,7 +178,17 @@ namespace Arduheater_GUI.Forms
             }
             else
             {
-                Program.Serial.TX("V");
+                if(t % RESET == 0)
+                {
+                    Program.Serial.Disconnect();
+                    Program.Serial.Connect();
+                }
+                else
+                {
+                    Program.Serial.TXNow(":V#");
+                }
+
+                StatusLabel.Text = $"Serial port ({Properties.Settings.Default.SerialPort}) is connecting.. ({TIMEOUT - t}s)";
             }
         }
 

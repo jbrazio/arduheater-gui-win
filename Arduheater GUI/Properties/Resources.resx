@@ -152,7 +152,7 @@
     <value>https://www.paypal.me/jbrazio</value>
   </data>
   <data name="URL_Support" xml:space="preserve">
-    <value />
+    <value>https://github.com/jbrazio/arduheater/issues</value>
   </data>
   <data name="URL_Twitter" xml:space="preserve">
     <value>https://twitter.com/jbrazio</value>

@@ -36,7 +36,7 @@ namespace Arduheater_GUI.Forms
             }
 
             comboBox2.SelectedItem = Properties.Settings.Default.SerialRate.ToString();
-            comboBox3.SelectedItem = Properties.Settings.Default.SerialData.ToString() + "-bit";
+            comboBox3.SelectedItem = Properties.Settings.Default.SerialData.ToString();
 
             foreach (Parity item in Enum.GetValues(typeof(Parity)))
             {

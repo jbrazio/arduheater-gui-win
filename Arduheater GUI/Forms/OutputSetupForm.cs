@@ -88,6 +88,9 @@ namespace Arduheater_GUI.Forms
             {
                 Program.Serial.TX($"D{(int)(OutputIndex)},{(int)MinPWM.Value},{(int)MaxPWM.Value},{(int)((Autostart.Checked) ? 1 : 0)}," +
                     $"{(int)(Temperature.Value * 10)},{(int)(Setpoint.Value * 10)},{(int)(Kp.Value * 10)},{(int)(Ki.Value * 10)},{(int)(Kd.Value * 10)}");
+
+                Console.WriteLine($"D{(int)(OutputIndex)},{(int)MinPWM.Value},{(int)MaxPWM.Value},{(int)((Autostart.Checked) ? 1 : 0)}," +
+                    $"{(int)(Temperature.Value * 10)},{(int)(Setpoint.Value * 10)},{(int)(Kp.Value * 10)},{(int)(Ki.Value * 10)},{(int)(Kd.Value * 10)}");
             }
         }
 

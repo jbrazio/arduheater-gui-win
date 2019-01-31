@@ -56,7 +56,7 @@ namespace Arduheater_GUI
         private Point_t LastDataPoint = new Point_t();
         private Buffer_t<Point_t> Buffer = new Buffer_t<Point_t>(10);
 
-
+         
         // Constructor ----------------------------------------------------------------------------
         public OutputChart()
         {
@@ -70,6 +70,8 @@ namespace Arduheater_GUI
             label.Visible = true;
             chart.Visible = false;
             power.Visible = false;
+
+            if (Properties.Settings.Default.Output_Legend_Visible) chart.Legends[0].Enabled = true;
         }
 
 
@@ -195,8 +197,8 @@ namespace Arduheater_GUI
                 chart.Series[1].Points.Add(Dataset[i].Setpoint);
             }
 
-            chart.Series[0].Name = $"Temperature ({Dataset[Dataset.Length - 1].Temperature.ToString("0.0")}°C)";
-            chart.Series[1].Name = $"Setpoint ({Dataset[Dataset.Length - 1].Setpoint.ToString("0.0")}°C)";
+            chart.Series[0].Name = $"Temp ({Dataset[Dataset.Length - 1].Temperature.ToString("0.0")}°C)";
+            chart.Series[1].Name = $"Set ({Dataset[Dataset.Length - 1].Setpoint.ToString("0.0")}°C)";
 
             double MaxYY = 0, MinYY = 0;
 
@@ -230,26 +232,26 @@ namespace Arduheater_GUI
 
         private void Title_DoubleClick(object sender, EventArgs e)
         {
-            string s = Microsoft.VisualBasic.Interaction.InputBox("New output identifier:", "Settings", Title);
-            if (!string.IsNullOrEmpty(s)) Title = s;
+            string s = Microsoft.VisualBasic.Interaction.InputBox("New output identifier:", "Settings", this.Title);
+            if (!string.IsNullOrEmpty(s)) this.Title = s;
         }
 
         private void Chart_MouseEnter(object sender, EventArgs e)
         {
             if (!Settings.Active) { return; }
-            chart.Legends[0].Enabled = true;
+            if (!Properties.Settings.Default.Output_Legend_Visible) chart.Legends[0].Enabled = true;
         }
 
         private void Chart_MouseHover(object sender, EventArgs e)
         {
             if (!Settings.Active) { return; }
-            chart.Legends[0].Enabled = true;
+            if (!Properties.Settings.Default.Output_Legend_Visible) chart.Legends[0].Enabled = true;
         }
 
         private void Chart_MouseLeave(object sender, EventArgs e)
         {
             if (!Settings.Active) { return; }
-            chart.Legends[0].Enabled = false;
+            if (! Properties.Settings.Default.Output_Legend_Visible) chart.Legends[0].Enabled = false;
         }
 
         private void EditButton_MouseEnter(object sender, EventArgs e)

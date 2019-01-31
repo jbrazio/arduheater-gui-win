@@ -48,26 +48,26 @@
             chartArea1.AxisX.IsLabelAutoFit = false;
             chartArea1.AxisX.IsMarginVisible = false;
             chartArea1.AxisX.IsReversed = true;
-            chartArea1.AxisX.LabelStyle.Font = new System.Drawing.Font("Consolas", 7F, System.Drawing.FontStyle.Bold);
+            chartArea1.AxisX.LabelStyle.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
             chartArea1.AxisX.MajorGrid.Enabled = false;
             chartArea1.AxisX.Maximum = 300D;
             chartArea1.AxisX.Minimum = 0D;
-            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Consolas", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             chartArea1.AxisY.IsLabelAutoFit = false;
             chartArea1.AxisY.IsMarginVisible = false;
-            chartArea1.AxisY.LabelStyle.Font = new System.Drawing.Font("Consolas", 7F, System.Drawing.FontStyle.Bold);
+            chartArea1.AxisY.LabelStyle.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
             chartArea1.AxisY.MajorGrid.Enabled = false;
             chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.LightGray;
             chartArea1.AxisY.Maximum = 100D;
             chartArea1.AxisY.Minimum = 0D;
             chartArea1.AxisY.Title = "%";
-            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Consolas", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             chartArea1.AxisY2.IsLabelAutoFit = false;
             chartArea1.AxisY2.IsMarginVisible = false;
-            chartArea1.AxisY2.LabelStyle.Font = new System.Drawing.Font("Consolas", 7F, System.Drawing.FontStyle.Bold);
+            chartArea1.AxisY2.LabelStyle.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
             chartArea1.AxisY2.MajorGrid.LineColor = System.Drawing.Color.LightGray;
             chartArea1.AxisY2.Title = "ºC";
-            chartArea1.AxisY2.TitleFont = new System.Drawing.Font("Consolas", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.AxisY2.TitleFont = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             chartArea1.BackColor = System.Drawing.SystemColors.Control;
             chartArea1.Name = "ChartArea1";
             chartArea1.Position.Auto = false;
@@ -79,7 +79,7 @@
             legend1.DockedToChartArea = "ChartArea1";
             legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
             legend1.Enabled = false;
-            legend1.Font = new System.Drawing.Font("Consolas", 7F);
+            legend1.Font = new System.Drawing.Font("Consolas", 9F);
             legend1.IsEquallySpacedItems = true;
             legend1.IsTextAutoFit = false;
             legend1.LegendItemOrder = System.Windows.Forms.DataVisualization.Charting.LegendItemOrder.ReversedSeriesOrder;
@@ -140,7 +140,7 @@
             this.label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label.Font = new System.Drawing.Font("Consolas", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.Location = new System.Drawing.Point(3, 33);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(744, 264);

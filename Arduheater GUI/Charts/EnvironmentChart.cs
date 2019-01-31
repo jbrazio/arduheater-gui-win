@@ -59,6 +59,8 @@ namespace Arduheater_GUI
             label.Visible = true;
             chart.Visible = false;
             Settings.Active = false;
+
+            if (Properties.Settings.Default.Ambient_Legend_Visible) chart.Legends[0].Enabled = true;
         }
 
         // Properties -----------------------------------------------------------------------------
@@ -172,17 +174,17 @@ namespace Arduheater_GUI
 
         private void chart_MouseEnter(object sender, EventArgs e)
         {
-            chart.Legends[0].Enabled = true;
+            if(! Properties.Settings.Default.Ambient_Legend_Visible) chart.Legends[0].Enabled = true;
         }
          
         private void chart_MouseHover(object sender, EventArgs e)
         {
-            chart.Legends[0].Enabled = true;
+            if (!Properties.Settings.Default.Ambient_Legend_Visible) chart.Legends[0].Enabled = true;
         }
 
         private void chart_MouseLeave(object sender, EventArgs e)
         {
-            chart.Legends[0].Enabled = false;
+            if (!Properties.Settings.Default.Ambient_Legend_Visible) chart.Legends[0].Enabled = false;
         }
     }
 }

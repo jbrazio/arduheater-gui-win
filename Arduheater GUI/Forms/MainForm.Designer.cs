@@ -64,34 +64,34 @@
             this.LedTX,
             this.LedRX,
             this.StatusLabel});
-            this.Statusbar.Location = new System.Drawing.Point(0, 615);
+            this.Statusbar.Location = new System.Drawing.Point(0, 617);
             this.Statusbar.Name = "Statusbar";
-            this.Statusbar.Size = new System.Drawing.Size(784, 24);
+            this.Statusbar.Size = new System.Drawing.Size(784, 22);
             this.Statusbar.TabIndex = 27;
             // 
             // LedTX
             // 
             this.LedTX.ActiveLinkColor = System.Drawing.Color.DarkRed;
             this.LedTX.BackColor = System.Drawing.Color.DarkGreen;
-            this.LedTX.Font = new System.Drawing.Font("Consolas", 7F, System.Drawing.FontStyle.Bold);
+            this.LedTX.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LedTX.ForeColor = System.Drawing.Color.White;
             this.LedTX.Name = "LedTX";
-            this.LedTX.Size = new System.Drawing.Size(19, 19);
+            this.LedTX.Size = new System.Drawing.Size(21, 17);
             this.LedTX.Text = "TX";
             // 
             // LedRX
             // 
             this.LedRX.BackColor = System.Drawing.Color.Maroon;
-            this.LedRX.Font = new System.Drawing.Font("Consolas", 7F, System.Drawing.FontStyle.Bold);
+            this.LedRX.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LedRX.ForeColor = System.Drawing.Color.White;
             this.LedRX.Name = "LedRX";
-            this.LedRX.Size = new System.Drawing.Size(19, 19);
+            this.LedRX.Size = new System.Drawing.Size(21, 17);
             this.LedRX.Text = "RX";
             // 
             // StatusLabel
             // 
             this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(49, 19);
+            this.StatusLabel.Size = new System.Drawing.Size(42, 17);
             this.StatusLabel.Text = "Ready.";
             // 
             // Menubar
@@ -105,7 +105,7 @@
             this.supportToolStripMenuItem});
             this.Menubar.Location = global::Arduheater_GUI.Properties.Settings.Default.Location;
             this.Menubar.Name = "Menubar";
-            this.Menubar.Size = new System.Drawing.Size(784, 27);
+            this.Menubar.Size = new System.Drawing.Size(784, 24);
             this.Menubar.TabIndex = 28;
             this.Menubar.Text = "menuStrip1";
             // 
@@ -115,13 +115,13 @@
             this.connectToolStripMenuItem,
             this.startToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(41, 23);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // connectToolStripMenuItem
             // 
             this.connectToolStripMenuItem.Name = "connectToolStripMenuItem";
-            this.connectToolStripMenuItem.Size = new System.Drawing.Size(131, 24);
+            this.connectToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.connectToolStripMenuItem.Text = "&Connect";
             this.connectToolStripMenuItem.Click += new System.EventHandler(this.ConnectToolStripMenuItem_Click);
             // 
@@ -129,7 +129,7 @@
             // 
             this.startToolStripMenuItem.Enabled = false;
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(131, 24);
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.startToolStripMenuItem.Text = "Send";
             // 
             // viewToolStripMenuItem
@@ -137,13 +137,13 @@
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SerialSetupToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(56, 23);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.viewToolStripMenuItem.Text = "&Setup";
             // 
             // SerialSetupToolStripMenuItem
             // 
             this.SerialSetupToolStripMenuItem.Name = "SerialSetupToolStripMenuItem";
-            this.SerialSetupToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
+            this.SerialSetupToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.SerialSetupToolStripMenuItem.Text = "&Serial port";
             this.SerialSetupToolStripMenuItem.Click += new System.EventHandler(this.SerialSetupToolStripMenuItem_Click);
             // 
@@ -158,26 +158,26 @@
             this.toolStripMenuItem2,
             this.checkForUpdatesToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(49, 23);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(190, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(168, 6);
             // 
             // githubToolStripMenuItem
             // 
             this.githubToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("githubToolStripMenuItem.Image")));
             this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
-            this.githubToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
+            this.githubToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.githubToolStripMenuItem.Text = "&Github";
             this.githubToolStripMenuItem.Click += new System.EventHandler(this.Open_URL_From_Menu_Item);
             // 
@@ -185,7 +185,7 @@
             // 
             this.twitterToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("twitterToolStripMenuItem.Image")));
             this.twitterToolStripMenuItem.Name = "twitterToolStripMenuItem";
-            this.twitterToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
+            this.twitterToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.twitterToolStripMenuItem.Text = "&Twitter";
             this.twitterToolStripMenuItem.Click += new System.EventHandler(this.Open_URL_From_Menu_Item);
             // 
@@ -193,26 +193,26 @@
             // 
             this.payPalToolStripMenuItem.Image = global::Arduheater_GUI.Properties.Resources.paypal;
             this.payPalToolStripMenuItem.Name = "payPalToolStripMenuItem";
-            this.payPalToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
+            this.payPalToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.payPalToolStripMenuItem.Text = "&PayPal";
             this.payPalToolStripMenuItem.Click += new System.EventHandler(this.Open_URL_From_Menu_Item);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(190, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(168, 6);
             // 
             // checkForUpdatesToolStripMenuItem
             // 
             this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
-            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
+            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.checkForUpdatesToolStripMenuItem.Text = "&Check for Updates";
             // 
             // supportToolStripMenuItem
             // 
             this.supportToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.supportToolStripMenuItem.Name = "supportToolStripMenuItem";
-            this.supportToolStripMenuItem.Size = new System.Drawing.Size(70, 23);
+            this.supportToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.supportToolStripMenuItem.Text = "&Support";
             this.supportToolStripMenuItem.Click += new System.EventHandler(this.Open_URL_From_Menu_Item);
             // 
@@ -224,7 +224,6 @@
             this.outputChart4.OutputIndex = 4;
             this.outputChart4.Size = new System.Drawing.Size(377, 145);
             this.outputChart4.TabIndex = 26;
-            this.outputChart4.Title = "Output title #4";
             this.outputChart4.EditButtonClick += new System.EventHandler(this.EditButtonClick);
             this.outputChart4.PowerButtonClick += new System.EventHandler(this.PowerButtonClick);
             // 
@@ -236,7 +235,6 @@
             this.outputChart3.OutputIndex = 3;
             this.outputChart3.Size = new System.Drawing.Size(377, 145);
             this.outputChart3.TabIndex = 25;
-            this.outputChart3.Title = "Output title #3";
             this.outputChart3.EditButtonClick += new System.EventHandler(this.EditButtonClick);
             this.outputChart3.PowerButtonClick += new System.EventHandler(this.PowerButtonClick);
             // 
@@ -248,7 +246,6 @@
             this.outputChart2.OutputIndex = 2;
             this.outputChart2.Size = new System.Drawing.Size(377, 145);
             this.outputChart2.TabIndex = 24;
-            this.outputChart2.Title = "Output title #2";
             this.outputChart2.EditButtonClick += new System.EventHandler(this.EditButtonClick);
             this.outputChart2.PowerButtonClick += new System.EventHandler(this.PowerButtonClick);
             // 
@@ -260,7 +257,6 @@
             this.outputChart1.OutputIndex = 1;
             this.outputChart1.Size = new System.Drawing.Size(377, 145);
             this.outputChart1.TabIndex = 23;
-            this.outputChart1.Title = "Output title #1";
             this.outputChart1.EditButtonClick += new System.EventHandler(this.EditButtonClick);
             this.outputChart1.PowerButtonClick += new System.EventHandler(this.PowerButtonClick);
             // 

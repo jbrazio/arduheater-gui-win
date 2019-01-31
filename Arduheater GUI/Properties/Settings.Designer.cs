@@ -12,7 +12,7 @@ namespace Arduheater_GUI.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.6.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -109,7 +109,7 @@ namespace Arduheater_GUI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Generic device")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Generic device A")]
         public string Output_1_Title {
             get {
                 return ((string)(this["Output_1_Title"]));
@@ -121,7 +121,7 @@ namespace Arduheater_GUI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Generic device")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Generic device B")]
         public string Output_2_Title {
             get {
                 return ((string)(this["Output_2_Title"]));
@@ -133,7 +133,7 @@ namespace Arduheater_GUI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Generic device")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Generic device C")]
         public string Output_3_Title {
             get {
                 return ((string)(this["Output_3_Title"]));
@@ -145,13 +145,37 @@ namespace Arduheater_GUI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Generic device")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Generic device D")]
         public string Output_4_Title {
             get {
                 return ((string)(this["Output_4_Title"]));
             }
             set {
                 this["Output_4_Title"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool Ambient_Legend_Visible {
+            get {
+                return ((bool)(this["Ambient_Legend_Visible"]));
+            }
+            set {
+                this["Ambient_Legend_Visible"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool Output_Legend_Visible {
+            get {
+                return ((bool)(this["Output_Legend_Visible"]));
+            }
+            set {
+                this["Output_Legend_Visible"] = value;
             }
         }
     }

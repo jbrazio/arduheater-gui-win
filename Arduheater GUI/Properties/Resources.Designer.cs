@@ -169,7 +169,7 @@ namespace Arduheater_GUI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to https://github.com/jbrazio/arduheater/issues.
         /// </summary>
         internal static string URL_Support {
             get {

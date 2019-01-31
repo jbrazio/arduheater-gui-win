@@ -24,16 +24,22 @@
       <Value Profile="(Default)">None</Value>
     </Setting>
     <Setting Name="Output_1_Title" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Generic device</Value>
+      <Value Profile="(Default)">Generic device A</Value>
     </Setting>
     <Setting Name="Output_2_Title" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Generic device</Value>
+      <Value Profile="(Default)">Generic device B</Value>
     </Setting>
     <Setting Name="Output_3_Title" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Generic device</Value>
+      <Value Profile="(Default)">Generic device C</Value>
     </Setting>
     <Setting Name="Output_4_Title" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Generic device</Value>
+      <Value Profile="(Default)">Generic device D</Value>
+    </Setting>
+    <Setting Name="Ambient_Legend_Visible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Output_Legend_Visible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>
 </SettingsFile>
