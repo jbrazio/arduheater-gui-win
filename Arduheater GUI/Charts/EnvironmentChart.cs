@@ -1,6 +1,6 @@
 ﻿/**
  * Arduheater GUI for Windows
- * Copyright (C) 2018 João Brázio [joao@brazio.org]
+ * Copyright (C) 2018-2019 João Brázio [joao@brazio.org]
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -176,7 +176,7 @@ namespace Arduheater_GUI
         {
             if(! Properties.Settings.Default.Ambient_Legend_Visible) chart.Legends[0].Enabled = true;
         }
-         
+
         private void Chart_MouseHover(object sender, EventArgs e)
         {
             if (!Properties.Settings.Default.Ambient_Legend_Visible) chart.Legends[0].Enabled = true;

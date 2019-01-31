@@ -1,6 +1,6 @@
 ﻿/**
  * Arduheater GUI for Windows
- * Copyright (C) 2018 João Brázio [joao@brazio.org]
+ * Copyright (C) 2018-2019 João Brázio [joao@brazio.org]
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -62,7 +62,7 @@ namespace Arduheater_GUI.Forms
             Program.Serial.ProcessCommand += new EventHandler(this.ProcessIncomingData);
             Program.Serial.IncomingData += new EventHandler(this.Activity_RX);
             Program.Serial.OutgoingData += new EventHandler(this.Activity_TX);
-        }  
+        }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -427,7 +427,7 @@ namespace Arduheater_GUI.Forms
                     break;
 
                 case 'F':
-                    
+
                     break;
 
                 case 'V':
@@ -438,7 +438,7 @@ namespace Arduheater_GUI.Forms
                     break;
             }
         }
-        
+
         private void UpdateChart(string[] args, Object o)
         {
             OutputChart chart;
@@ -556,4 +556,4 @@ namespace Arduheater_GUI.Forms
         }
     }
 }
-    
+
