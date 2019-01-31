@@ -7,7 +7,7 @@
     <ProjectGuid>{78D186C3-7D7A-4DD9-8AD6-A83525F502ED}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Arduheater_GUI</RootNamespace>
-    <AssemblyName>Arduheater GUI</AssemblyName>
+    <AssemblyName>Arduheater</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -21,8 +21,12 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <SupportUrl>https://github.com/jbrazio/arduheater-gui-win/issues</SupportUrl>
+    <ErrorReportUrl>https://github.com/jbrazio/arduheater-gui-win/issues</ErrorReportUrl>
+    <ProductName>Arduheater GUI</ProductName>
+    <PublisherName>João Brázio [joao%40brazio.org]</PublisherName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.1.1.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -36,6 +40,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>

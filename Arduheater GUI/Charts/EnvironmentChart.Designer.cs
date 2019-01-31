@@ -117,9 +117,9 @@
             this.chart.SuppressExceptions = true;
             this.chart.TabIndex = 9;
             this.chart.Text = "chart1";
-            this.chart.MouseEnter += new System.EventHandler(this.chart_MouseEnter);
-            this.chart.MouseLeave += new System.EventHandler(this.chart_MouseLeave);
-            this.chart.MouseHover += new System.EventHandler(this.chart_MouseHover);
+            this.chart.MouseEnter += new System.EventHandler(this.Chart_MouseEnter);
+            this.chart.MouseLeave += new System.EventHandler(this.Chart_MouseLeave);
+            this.chart.MouseHover += new System.EventHandler(this.Chart_MouseHover);
             // 
             // title
             // 

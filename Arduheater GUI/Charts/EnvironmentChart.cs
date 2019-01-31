@@ -172,17 +172,17 @@ namespace Arduheater_GUI
 
         public void AddDataPoint(Point_t datapoint) => Buffer.Enqueue(datapoint);
 
-        private void chart_MouseEnter(object sender, EventArgs e)
+        private void Chart_MouseEnter(object sender, EventArgs e)
         {
             if(! Properties.Settings.Default.Ambient_Legend_Visible) chart.Legends[0].Enabled = true;
         }
          
-        private void chart_MouseHover(object sender, EventArgs e)
+        private void Chart_MouseHover(object sender, EventArgs e)
         {
             if (!Properties.Settings.Default.Ambient_Legend_Visible) chart.Legends[0].Enabled = true;
         }
 
-        private void chart_MouseLeave(object sender, EventArgs e)
+        private void Chart_MouseLeave(object sender, EventArgs e)
         {
             if (!Properties.Settings.Default.Ambient_Legend_Visible) chart.Legends[0].Enabled = false;
         }
