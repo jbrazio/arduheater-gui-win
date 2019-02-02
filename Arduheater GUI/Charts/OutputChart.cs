@@ -33,13 +33,13 @@ namespace Arduheater_GUI
             public string Title { get; set; }
             public bool Powered { get; set; }
             public int OutputIndex { get; set; }
-        };
+        }
 
         public struct Point_t
         {
             public double Temperature { get; set; }
             public double Setpoint { get; set; }
-        };
+        }
 
 
         // Events ---------------------------------------------------------------------------------

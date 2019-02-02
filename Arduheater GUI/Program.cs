@@ -28,6 +28,7 @@ namespace Arduheater_GUI
     {
 #if DEBUG
         [DllImport("kernel32.dll")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1060:MovePInvokesToNativeMethodsClass")]
         static extern bool AttachConsole(int dwProcessId);
         private const int ATTACH_PARENT_PROCESS = -1;
 #endif

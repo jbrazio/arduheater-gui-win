@@ -29,14 +29,14 @@ namespace Arduheater_GUI
         private struct Settings_t
         {
             public bool Active { get; set; }
-        };
+        }
 
         public struct Point_t
         {
             public double Ambient { get; set; }
             public double Humidity { get; set; }
             public double Dewpoint { get; set; }
-        };
+        }
 
 
         // Events ---------------------------------------------------------------------------------

@@ -27,7 +27,7 @@ namespace Arduheater_GUI
         private struct Settings_t
         {
             public bool Checked { get; set; }
-        };
+        }
 
         private Settings_t Settings = new Settings_t();
         public event EventHandler CheckedChanged;

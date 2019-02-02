@@ -239,6 +239,8 @@ namespace Arduheater_GUI.Forms
             Runtime.SerialPort_Timer.Enabled = true;
             Runtime.SerialPort_Timer.Tick += SerialPort_Activity;
 
+            sendToolStripMenuItem.Enabled = true;
+
             environmentChart1.Active = true;
             connectToolStripMenuItem.Enabled = true;
             connectToolStripMenuItem.Text = "&Disconnect";
@@ -295,6 +297,8 @@ namespace Arduheater_GUI.Forms
                     }
                 }
             }
+
+            sendToolStripMenuItem.Enabled = false;
 
             connectToolStripMenuItem.Enabled = true;
             connectToolStripMenuItem.Text = "&Connect";
@@ -553,6 +557,12 @@ namespace Arduheater_GUI.Forms
             }
 
             Program.Serial.TX("?");
+        }
+
+        private void SendToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string s = Microsoft.VisualBasic.Interaction.InputBox("Command:", "Serial", "");
+            if (!string.IsNullOrEmpty(s)) Program.Serial.TX(s);
         }
     }
 }

@@ -36,7 +36,7 @@
             this.Menubar = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.connectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sendToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SerialSetupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -113,7 +113,7 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.connectToolStripMenuItem,
-            this.startToolStripMenuItem});
+            this.sendToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
@@ -121,16 +121,17 @@
             // connectToolStripMenuItem
             // 
             this.connectToolStripMenuItem.Name = "connectToolStripMenuItem";
-            this.connectToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.connectToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.connectToolStripMenuItem.Text = "&Connect";
             this.connectToolStripMenuItem.Click += new System.EventHandler(this.ConnectToolStripMenuItem_Click);
             // 
-            // startToolStripMenuItem
+            // sendToolStripMenuItem
             // 
-            this.startToolStripMenuItem.Enabled = false;
-            this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
-            this.startToolStripMenuItem.Text = "Send";
+            this.sendToolStripMenuItem.Enabled = false;
+            this.sendToolStripMenuItem.Name = "sendToolStripMenuItem";
+            this.sendToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sendToolStripMenuItem.Text = "Send";
+            this.sendToolStripMenuItem.Click += new System.EventHandler(this.SendToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
@@ -224,6 +225,7 @@
             this.outputChart4.OutputIndex = 4;
             this.outputChart4.Size = new System.Drawing.Size(377, 145);
             this.outputChart4.TabIndex = 26;
+            this.outputChart4.Title = "Output chart";
             this.outputChart4.EditButtonClick += new System.EventHandler(this.EditButtonClick);
             this.outputChart4.PowerButtonClick += new System.EventHandler(this.PowerButtonClick);
             // 
@@ -235,6 +237,7 @@
             this.outputChart3.OutputIndex = 3;
             this.outputChart3.Size = new System.Drawing.Size(377, 145);
             this.outputChart3.TabIndex = 25;
+            this.outputChart3.Title = "Output chart";
             this.outputChart3.EditButtonClick += new System.EventHandler(this.EditButtonClick);
             this.outputChart3.PowerButtonClick += new System.EventHandler(this.PowerButtonClick);
             // 
@@ -246,6 +249,7 @@
             this.outputChart2.OutputIndex = 2;
             this.outputChart2.Size = new System.Drawing.Size(377, 145);
             this.outputChart2.TabIndex = 24;
+            this.outputChart2.Title = "Output chart";
             this.outputChart2.EditButtonClick += new System.EventHandler(this.EditButtonClick);
             this.outputChart2.PowerButtonClick += new System.EventHandler(this.PowerButtonClick);
             // 
@@ -257,6 +261,7 @@
             this.outputChart1.OutputIndex = 1;
             this.outputChart1.Size = new System.Drawing.Size(377, 145);
             this.outputChart1.TabIndex = 23;
+            this.outputChart1.Title = "Output chart";
             this.outputChart1.EditButtonClick += new System.EventHandler(this.EditButtonClick);
             this.outputChart1.PowerButtonClick += new System.EventHandler(this.PowerButtonClick);
             // 
@@ -315,7 +320,7 @@
         private System.Windows.Forms.ToolStripStatusLabel StatusLabel;
         private System.Windows.Forms.ToolStripMenuItem connectToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sendToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SerialSetupToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel LedTX;
         private System.Windows.Forms.ToolStripStatusLabel LedRX;

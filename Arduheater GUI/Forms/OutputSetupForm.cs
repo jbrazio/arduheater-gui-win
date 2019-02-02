@@ -28,7 +28,7 @@ namespace Arduheater_GUI.Forms
         private struct Settings_t
         {
             public int OutputIndex { get; set; }
-        };
+        }
 
         public struct Configuration_t
         {

@@ -30,7 +30,7 @@ namespace Arduheater_GUI
             public float P { get; set; }
             public float I { get; set; }
             public float D { get; set; }
-        };
+        }
 
 
         // Attributes -----------------------------------------------------------------------------
